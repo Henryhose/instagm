@@ -10,7 +10,7 @@ python manage.py migrate
 
 # Set environment variables
 export DJANGO_SECRET_KEY='your-secret-key'
-export DJANGO_DEBUG='True'
+export DJANGO_DEBUG='False'
 
 # Or, load environment variables from a .env file
 # source .env
