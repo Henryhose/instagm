@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 import os
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -114,16 +113,16 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_L10N = True  # Added USE_L10N setting
+USE_L10N = True  # Corrected USE_L10N setting
 
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static'),
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static')
-STATIC_URL = '/static/' 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'instagm/static')]  # Changed to a list
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
