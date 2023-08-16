@@ -1,4 +1,4 @@
-cd instagram
+cd insta
 
 pip install -r requirements.txt
 
