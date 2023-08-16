@@ -2,7 +2,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE','elevate.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE','instagram.settings')
 
 application = get_wsgi_application()
 
