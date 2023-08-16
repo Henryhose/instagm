@@ -1,3 +1,3 @@
 pip install -r  requirements.txt
 echo "successful"
-python manage.py collectstatic
+python3.11 manage.py collectstatic
